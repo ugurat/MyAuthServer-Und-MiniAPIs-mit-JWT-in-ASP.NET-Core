@@ -1,0 +1,69 @@
+﻿
+
+Suanki kod her iki TOKEN ile de calisiyor.
+Ayirt edebimek lazim.
+Bunun icin de bir sonraki örnegi kodla!!!
+
+
+TOKEN Erisimini özellestirme
+
+https://chatgpt.com/c/675069ca-3624-8003-9a6a-ff5afefa2cc2
+
+
+----
+
+
+Bu her iki token ile GetInfo() methoduna erisebiliyorum. 
+
+Sadece Kullanici girebilsin veya
+sadece client bilgileri ile girilsin
+ayrimi nasil yapilacak?
+
+---
+
+# TokenByClient: Id ve Secret ile alinan token.
+
+{
+  "aud": "www.miniapi5.com",
+  "nbf": 1733322188,
+  "exp": 1733322488,
+  "iss": "www.authserver.com"
+}
+
+
+---
+
+# TokenByUser: email ve sefre ile gelen token: 
+
+{
+  "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "b15111b8-8750-4329-9851-e2196d34ff3c",
+
+  "email": "ugurcigdem@gmail.com",
+    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "UgurCigdem",
+
+  "jti": "da29b1d4-3a4c-49a6-b79a-4e77db5d5144",
+
+  "city": "Wien",
+  "birth-date": "2015-05-21",
+
+  "aud": [
+    "www.authserver.com",
+    "www.miniapi1.com",
+    "www.miniapi2.com",
+    "www.miniapi3.com",
+    "www.miniapi4.com"
+  ],
+
+  "http://schemas.microsoft.com/ws/2008/06/identity/claims/role": [
+    "manager",
+    "admin"
+  ],
+
+  "nbf": 1733322601,
+  "exp": 1733322901,
+  "iss": "www.authserver.com"
+
+}
+
+
+---
